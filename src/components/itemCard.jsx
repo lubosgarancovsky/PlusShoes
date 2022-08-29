@@ -5,7 +5,7 @@ import { useState} from 'react'
 import { useDispatch } from 'react-redux'
 import { storeCart } from '../actions/cartActions'
 
-export function ItemCard({thumbnail, price, name, sizes, color}) {
+export function ItemCard({thumbnail, price, name, sizes}) {
 
     const dispatch = useDispatch()
     const [selectedSize, setSelectedSize] = useState(sizes[0])
@@ -31,7 +31,7 @@ export function ItemCard({thumbnail, price, name, sizes, color}) {
 
     return ( 
         <div className="item-card">
-            <div className="item-picture" style={{backgroundColor: `${color}`}}>
+            <div className="item-picture">
                 <img src={thumbnail} alt="shoe_thumbnail"/>
             </div>
 

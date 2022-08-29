@@ -19,6 +19,7 @@
     align-items: center;
     border-radius: 2rem;
     flex: 1;
+    background-color: $primary;
 
     img{
         width: 12rem;
@@ -50,7 +51,8 @@
     button{
         width: 100%;
         border: none;
-        background-color: $primary;
+        background-color: $cart-counter;
+        color:white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,6 +63,7 @@
         img{
             width: 1em;
             margin-left: 1em;
+            filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(1%) hue-rotate(257deg) brightness(108%) contrast(100%);
         }
 
         &:hover{
