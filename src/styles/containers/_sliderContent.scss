@@ -3,10 +3,9 @@
     height: 100%;
     border-radius: 2rem;
     box-sizing: border-box;
-    padding: 6em 12em;
+    padding: 8vw 10vw;
     position: relative;
     overflow: hidden;
-    color:black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,7 +13,15 @@
     p{
         margin-top: 2rem;
     }
+
+    .text{
+        h1, p, b{
+            color:black;
+        }
+    }
 }
+
+
 
 .page-image{
     top:0;
@@ -84,6 +91,7 @@
 .page-three{
     background-color: #FF747D;
 }
+
 
 
 

@@ -17,6 +17,7 @@ const cartReducer = (state = [], action) => {
                 return item;
             })
 
+
            return isInCart ?  newState3 : [...state, action.payload]
 
         case 'DELETE':

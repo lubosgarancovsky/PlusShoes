@@ -36,11 +36,11 @@ export function ItemCard({thumbnail, price, name, sizes}) {
             </div>
 
             <div className="item-desc">
-                <h3>{price}€</h3>
-                <h4>{name}</h4>
+                <div className="price-name">
+                    <h3>{price}€</h3>
+                    <h4>{name}</h4>
+                </div>
 
-
-                
                 <div className="sizes">
                     <p className='choose-size'>Choose size:</p>
                     <select name="select-size" onChange={handleChange}>

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from 'framer-motion'
 
+
+
 import shoe_1 from '../assets/pictures/shoe_1.webp'
 import shoe_2 from '../assets/pictures/shoe_2.webp'
 import shoe_3 from '../assets/pictures/shoe_3.webp'
@@ -10,6 +12,8 @@ import shoe_6 from '../assets/pictures/shoe_6.webp'
 import shoe_7 from '../assets/pictures/shoe_7.webp'
 import shoe_8 from '../assets/pictures/shoe_8.webp'
 import shoe_9 from '../assets/pictures/shoe_9.webp'
+
+
 
 
 export function SlideOne() {
@@ -34,6 +38,7 @@ export function SlideOne() {
                 <h1>Are you ready</h1>
                 <h1><b>to lead the way</b></h1>
                 <p>Luxury meets ultimate sitting comfort</p>
+                
             </section>
 
             <section className="page-image">
@@ -89,6 +94,7 @@ export function SlideTwo() {
                 <h1>Take your style</h1>
                 <h1><b>to another level</b></h1>
                 <p>Get yourself a shoes that steal the party</p>
+                
             </section>
 
             <section className="page-image">
@@ -145,6 +151,7 @@ export function SlideThree() {
                 <h1>You are</h1>
                 <h1><b>the boss</b></h1>
                 <p>Complete your fit and walk with confidence</p>
+                
             </section>
 
             <section className="page-image">
