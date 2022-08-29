@@ -1,0 +1,29 @@
+.top-bar{
+    display: flex;
+    padding: 1.2rem 2.5rem;
+}
+
+.top-bar-box-1{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.top-bar-box-2{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.top-bar-box-3{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+@media (max-width: 600px){
+    .top-bar-box-2{
+        display: none;
+    }
+}

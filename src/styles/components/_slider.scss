@@ -1,0 +1,54 @@
+.carousel-slider{
+    display: flex;
+    position: relative;
+}
+
+.slider-moving-box{
+    display: flex;
+}
+
+.slider-controls{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
+.arrow{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    box-shadow: rgba(123, 123, 123, .2) 0px 0px 5px 5px;
+    transition: 100ms;
+    cursor: pointer;
+    img{
+        width: 2em;
+    }
+
+    &:hover{
+        @include primary-hover-mixin;
+    }
+}
+
+.flipped{
+    transform: rotate(180deg);
+}
+
+
+.item{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}

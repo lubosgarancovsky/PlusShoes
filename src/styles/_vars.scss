@@ -4,5 +4,14 @@ $background: #FBFBFB;
 $foreground: #33343D;
 $primary: #DFDFDF;
 $secondary: #2F2F2F;
+$cart-counter: #FF5353;
+
+$primary-hover: #d3d3d3;
+
 
 $filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(962%) hue-rotate(196deg) brightness(90%) contrast(87%);
+
+
+@mixin primary-hover-mixin{
+    background-color: $primary-hover;
+}

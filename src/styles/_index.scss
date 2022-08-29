@@ -1,2 +1,13 @@
 @import './vars';
 @import './typography';
+
+// COMPONENTS
+@import './components/buttons';
+@import './components/searchbar';
+@import './components/slider';
+
+
+
+// CONTAINERS
+@import './containers/header.scss';
+@import './containers/sliderContent.scss';
