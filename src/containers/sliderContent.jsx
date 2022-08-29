@@ -142,8 +142,8 @@ export function SlideThree() {
     return ( 
         <div className="page page-three">
             <section className="text">
-                <h1>Meeting with boss?</h1>
-                <h1><b>No, you are the boss</b></h1>
+                <h1>You are</h1>
+                <h1><b>the boss</b></h1>
                 <p>Complete your fit and walk with confidence</p>
             </section>
 
