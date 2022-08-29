@@ -1,6 +1,12 @@
 .top-bar{
     display: flex;
     padding: 1.2rem 2.5rem;
+    position: fixed;
+    z-index: 10;
+    background-color: $background;
+    width: 100%;
+    box-sizing: border-box;
+    top:0;
 }
 
 .top-bar-box-1{
@@ -20,6 +26,10 @@
     display: flex;
     justify-content: flex-end;
     flex: 1;
+}
+
+.header-carousel{
+    margin-top: 6rem;
 }
 
 @media (max-width: 600px){

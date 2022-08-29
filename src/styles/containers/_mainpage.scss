@@ -1,0 +1,19 @@
+main{
+    padding: 18rem 0;
+}
+
+.goods-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 10rem;
+    width: max(48rem, 60vw);
+    margin: auto;
+}
+
+@media (max-width:680px) {
+    .goods-grid{
+        grid-template-columns:1fr 1fr;
+        width: 30rem;
+    }
+}

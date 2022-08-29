@@ -1,0 +1,80 @@
+.item-card{
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+
+    h3{
+        font-weight: 300;
+        margin: 0.2em 0;
+    }
+    h4{
+        font-size: $medium;
+        margin-bottom: 1em;
+    }
+}
+
+.item-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+
+    img{
+        width: 100%;
+    }
+}
+
+.item-desc{
+    padding: 1rem;
+}
+
+.sizes{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
+}
+
+.shoe-size{
+    padding: 0.8rem;
+    font-size: $medium;
+    background-color: $primary;
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1em;
+    max-height: 1em;
+    margin: 0.2rem;
+
+    &:hover{
+     @include primary-hover-mixin;
+    }
+}
+
+.item-colors{
+    padding: 1rem;
+}
+
+.item-button{
+    button{
+        width: 100%;
+        border: none;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $medium;
+        padding: 1rem;
+        border-radius: 10em;
+        cursor: pointer;
+        img{
+            width: 1em;
+            margin-left: 1em;
+        }
+
+        &:hover{
+            @include primary-hover-mixin;
+        }
+    }
+}
