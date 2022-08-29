@@ -52,3 +52,9 @@
     align-items: center;
     box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+    .slider-controls{
+        display: none;
+    }
+}

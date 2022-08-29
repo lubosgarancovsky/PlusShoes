@@ -1,70 +1,74 @@
 .page{
     width: 90%;
     height: 100%;
-    background-color: red;
     border-radius: 2rem;
     box-sizing: border-box;
     padding: 6em 12em;
     position: relative;
     overflow: hidden;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     p{
         margin-top: 2rem;
     }
+}
 
-    .page-image{
-        top:0;
-        right:0;
-        z-index: 1;
-        position: absolute;
-        top:0;
-        right:0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+.page-image{
+    top:0;
+    right:0;
+    z-index: 1;
+    position: absolute;
+    top:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
-        img{
-            width: 42rem;
-            transform: translate(10rem, 0) rotate(-30deg);
+    img{
+        width: max(42rem, 50vw);
+        transform: translate(10rem, 0) rotate(-30deg);
 
-        }
+    }
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    gap: 3rem;
+    margin: 8rem auto;
+    position: relative;
+    z-index: 2;
+}
+
+.box-item{
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+
+    img{
+        width: 100%;
     }
 
-    .boxes{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: fit-content;
-        gap: 3rem;
-        margin: 8rem auto;
-        position: relative;
-        z-index: 2;
-
-        .box-item{
-            width: 6rem;
-            height: 6rem;
-            border: 2px solid white;
-            border-radius: 1rem;
-            background-color: rgba(0, 0, 0, 0.2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-            cursor: pointer;
-
-            img{
-                width: 100%;
-            }
-
-            &:hover{
-                background-color: rgba(0, 0, 0, 0.4);
-            }
-        }
-
-        .selected{
-            background-color: rgba(0, 0, 0, 0.4);
-        }
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.4);
     }
+}
+
+
+.selected{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -79,4 +83,65 @@
 
 .page-three{
     background-color: #FF747D;
+}
+
+
+
+@media (max-width:940px){
+    .page{
+        padding: 4rem 1.5rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .page-image{
+        position: relative;
+        height: 6rem;
+        margin: 5rem 0;
+        img{
+            width:max(60%, 16rem);
+            transform: rotate(0deg);
+        }
+    }
+
+    .text{
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width:600px){
+    .box-item{
+        width: 5rem;
+        height: 5rem;
+        border: 2px solid white;
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    
+        img{
+            width: 100%;
+        }
+    
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+@media (max-width:360px){
+    .box-item{
+       display: none;
+    }
+
+    .page-image{
+        display: none;
+    }
+
+    .item{
+        height: fit-content;
+    }
 }
