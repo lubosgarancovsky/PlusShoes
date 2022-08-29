@@ -1,7 +1,7 @@
 .item-card{
     overflow: hidden;
-    display: grid;
-    grid-template-rows: 1fr auto auto;
+    display: flex;
+    flex-direction: column;
 
     h3{
         font-weight: 300;
@@ -18,43 +18,33 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+    flex: 1;
 
     img{
-        width: 100%;
+        width: 12rem;
+        height: 12rem;
+        object-fit: contain;
     }
 }
 
 .item-desc{
     padding: 1rem;
+    flex: 1;
 }
 
 .sizes{
     margin: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
-}
-
-.shoe-size{
-    padding: 0.8rem;
-    font-size: $medium;
-    background-color: $primary;
-    display: inline-block;
-    cursor: pointer;
     display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
     align-items: center;
-    justify-content: center;
-    max-width: 1em;
-    max-height: 1em;
-    margin: 0.2rem;
-
-    &:hover{
-     @include primary-hover-mixin;
+    select{
+        font-size: $small;
+        padding: 0.5em;
     }
 }
 
-.item-colors{
-    padding: 1rem;
-}
+
 
 .item-button{
     button{

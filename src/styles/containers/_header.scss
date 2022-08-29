@@ -7,6 +7,7 @@
     width: 100%;
     box-sizing: border-box;
     top:0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 2px;
 }
 
 .top-bar-box-1{
@@ -29,7 +30,7 @@
 }
 
 .header-carousel{
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 @media (max-width: 600px){

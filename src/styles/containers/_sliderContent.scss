@@ -30,7 +30,7 @@
 
     img{
         width: max(42rem, 50vw);
-        transform: translate(10rem, 0) rotate(-30deg);
+        transform: translate(10rem, 0);
 
     }
 }
@@ -101,7 +101,7 @@
 
         img{
             width:max(60%, 16rem);
-            transform: rotate(0deg);
+            transform: translate(0, 0);
         }
     }
 

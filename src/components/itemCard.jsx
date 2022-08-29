@@ -1,6 +1,34 @@
 import cart from '../assets/icons/cart.svg'
 
+import { useState} from 'react'
+
+import { useDispatch } from 'react-redux'
+import { storeCart } from '../actions/cartActions'
+
 export function ItemCard({thumbnail, price, name, sizes, color}) {
+
+    const dispatch = useDispatch()
+    const [selectedSize, setSelectedSize] = useState(sizes[0])
+
+
+    const handleChange = event => {
+        setSelectedSize(event.target.value)
+    }
+
+    const addItem = () => {
+
+        const item = {
+            thumbnail: thumbnail,
+            price: price,
+            name: name,
+            amount: 1,
+            size: selectedSize,
+            id: Date.now()
+        }
+
+        dispatch(storeCart(item))
+    }
+
     return ( 
         <div className="item-card">
             <div className="item-picture" style={{backgroundColor: `${color}`}}>
@@ -12,18 +40,21 @@ export function ItemCard({thumbnail, price, name, sizes, color}) {
                 <h4>{name}</h4>
 
 
-                <p>Choose size:</p>
+                
                 <div className="sizes">
-                    {
-                        sizes.map((size, index) => (
-                            <div key={index} className="shoe-size">{size}</div>
-                        ))
-                    }
+                    <p className='choose-size'>Choose size:</p>
+                    <select name="select-size" onChange={handleChange}>
+                        {
+                            sizes.map((size, index) => (
+                                <option value={size} key={index}>{size}</option>
+                            ))
+                        }
+                    </select>
                 </div>
             </div>
 
             <div className="item-button">
-                    <button className="add-to-cart">Add to cart <img src={cart} alt="cart-icon"/></button>
+                    <button className="add-to-cart" onClick={addItem}>Add to cart <img src={cart} alt="cart-icon"/></button>
             </div>
 
         </div>

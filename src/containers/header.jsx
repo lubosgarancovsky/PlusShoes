@@ -1,7 +1,5 @@
 import { CartBtn, MenuBtn,  UserBtn} from "../components/buttons";
-import { SearchBar } from "../components/searchbar";
 
-import user from '../assets/icons/user.svg';
 import { Slider } from "../components/slider";
 
 export function Header() {
@@ -10,7 +8,6 @@ export function Header() {
             <div className="top-bar">
                 <div className="top-bar-box-1">
                     <MenuBtn/>
-                    <SearchBar/>
                 </div>
 
                 <div className="top-bar-box-2">
