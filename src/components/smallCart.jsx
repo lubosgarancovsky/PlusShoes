@@ -44,7 +44,7 @@ export function SmallCart() {
             </div>
 
             <div className="content">
-                {
+            {
                     cart.map((item, index) => (
                         <CartItem id={item.id} size={item.size} amount={item.amount} thumbnail={item.thumbnail} name={item.name} price={(item.price * item.amount).toFixed(2)} key={index}/>
                     ))

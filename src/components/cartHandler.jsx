@@ -11,7 +11,13 @@ export function CartLoader() {
 
     useEffect(()=>{
         const loadedCart = JSON.parse(sessionStorage.getItem('cart-content'))
-        dispatch(storeWholeCart(loadedCart))
+
+        if (loadedCart === null) {
+            dispatch(storeWholeCart([]))
+        } else {
+            dispatch(storeWholeCart(loadedCart))
+        }
+        
     },[])
 
     return null;
