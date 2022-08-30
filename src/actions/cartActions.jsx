@@ -5,6 +5,13 @@ export const storeCart = (item) => {
     }
 }
 
+export const storeWholeCart = (cart) => {
+    return {
+        type: 'STORECART',
+        payload: cart
+    }
+}
+
 export const removeFromCart = (id) => {
     return {
         type: 'DELETE',

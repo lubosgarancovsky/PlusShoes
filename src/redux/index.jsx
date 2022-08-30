@@ -1,6 +1,6 @@
 import { combineReducers } from "redux"
 import {createStore} from 'redux'
-
+import { sessionStoreCart } from "../scripts/storeCart"
 
 const cartReducer = (state = [], action) => {
     switch (action.type){
@@ -19,6 +19,7 @@ const cartReducer = (state = [], action) => {
            return isInCart ?  newState3 : [...state, action.payload]
 
         case 'DELETE':
+            sessionStoreCart(state.filter(item => !(item.id == action.payload)))
             return state.filter(item => !(item.id == action.payload))
 
         case 'INC':
@@ -29,6 +30,7 @@ const cartReducer = (state = [], action) => {
                 }
                 return item;
             })
+            sessionStoreCart(newState)
             return newState
 
          case 'DEC':
@@ -40,7 +42,12 @@ const cartReducer = (state = [], action) => {
                 }
                 return item;
             })
+                sessionStoreCart(newAmount == 0 ?  state.filter(item => !(item.id == action.payload)) : newState2)
                 return newAmount == 0 ?  state.filter(item => !(item.id == action.payload)) : newState2
+
+        case 'STORECART':
+            return action.payload
+
         default:
             return state
     }

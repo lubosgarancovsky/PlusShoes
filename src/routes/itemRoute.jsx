@@ -1,7 +1,7 @@
 import { SmallCart } from "../components/smallCart";
 import { TopBar } from "../containers/topbar";
 import { AddToCartBtn } from "../components/buttons";
-
+import {CartLoader} from '../components/cartHandler'
 
 import {useState } from "react";
 
@@ -16,6 +16,7 @@ export function ItemRoute() {
 
     return ( 
         <div className="item-route">
+            <CartLoader/>
             <TopBar/>
             <SmallCart/>
 
@@ -52,21 +53,3 @@ export function ItemRoute() {
         </div>
      );
 }
-
-
-/*
-<select name="select-size" onChange={handleChange}>
-                        {
-                            item.sizes.map((size, index) => (
-                                <option value={size} key={index}>{size}</option>
-                            ))
-                        }
-                    </select>
-
-
-                        const handleChange = event => {
-        setSelectedSize(event.target.value)
-    }
-
-
-*/

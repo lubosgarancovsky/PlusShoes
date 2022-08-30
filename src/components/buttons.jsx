@@ -1,6 +1,6 @@
 
 import menu from '../assets/icons/menu.svg'
-import cart from '../assets/icons/cart.svg'
+import cartIcon from '../assets/icons/cart.svg'
 import user from '../assets/icons/user.svg'
 
 import { useSelector } from 'react-redux';
@@ -8,6 +8,7 @@ import {useDispatch} from 'react-redux';
 import { openCart } from '../actions/contentActions';
 import { storeCart } from '../actions/cartActions';
 import { useEffect, useState } from 'react';
+import { sessionStoreCart } from '../scripts/storeCart';
 
 export function MenuBtn() {
     return ( 
@@ -43,7 +44,7 @@ export function CartBtn() {
     return ( 
         <div className='cart-btn-wrapper'>
             <button className="cart-btn" onClick={handleClick}>
-                <img src={cart} alt="cart-icon"/>
+                <img src={cartIcon} alt="cart-icon"/>
             </button>
             <div className='cart-counter'>{total}</div>
         </div>
@@ -62,6 +63,7 @@ export function UserBtn() {
 export function AddToCartBtn({thumbnail, price, name, size}) {
 
     const dispatch = useDispatch()
+    const cart = useSelector(state => state.cart)
 
     const addItem = () => {
 
@@ -75,12 +77,13 @@ export function AddToCartBtn({thumbnail, price, name, size}) {
         }
 
         dispatch(storeCart(item))
+        sessionStoreCart([...cart, item])
     }
 
     return ( 
         <button className="add-to-cart"  onClick={addItem}>
             Add to cart 
-            <img src={cart} alt="cart-icon"/>
+            <img src={cartIcon} alt="cart-icon"/>
         </button>
      );
 }

@@ -1,4 +1,5 @@
 import './App.scss'
+import { CartLoader } from './components/cartHandler'
 import { SmallCart } from './components/smallCart'
 
 import {Header} from './containers/header'
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <div className="App">
+      <CartLoader/>
       <Header/>
       <SmallCart/>
       <MainPage/>
