@@ -63,7 +63,7 @@ export function ItemCard({thumbnail, price, name, sizes}) {
             </div>
 
             <div className="item-button">
-                    <AddToCartBtn thumbnail={thumbnail} price={price} name={name} size={selectedSize}/>
+                <AddToCartBtn  thumbnail={thumbnail} price={price} name={name} size={selectedSize}/>
             </div>
 
         </div>

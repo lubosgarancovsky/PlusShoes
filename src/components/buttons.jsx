@@ -4,23 +4,25 @@ import cartIcon from '../assets/icons/cart.svg'
 import user from '../assets/icons/user.svg'
 
 import { useSelector } from 'react-redux';
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { openCart } from '../actions/contentActions';
 import { storeCart } from '../actions/cartActions';
 import { useEffect, useState } from 'react';
 import { sessionStoreCart } from '../scripts/storeCart';
 
+import { motion } from 'framer-motion';
+
 export function MenuBtn() {
-    return ( 
+    return (
         <button className="menu-btn">
-            <img src={menu} alt="menu-icon"/>
+            <img src={menu} alt="menu-icon" />
             <span>Menu</span>
         </button>
-     );
+    );
 }
 
 export function CartBtn() {
-    
+
     const [total, setTotal] = useState(0)
 
     const cartState = useSelector(state => state.cart)
@@ -30,7 +32,7 @@ export function CartBtn() {
         dispatch(openCart())
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         var totalAmount = 0
 
         cartState.forEach(element => {
@@ -39,28 +41,40 @@ export function CartBtn() {
 
 
         setTotal(totalAmount)
-    },[cartState])
+    }, [cartState])
 
-    return ( 
+    return (
         <div className='cart-btn-wrapper'>
             <button className="cart-btn" onClick={handleClick}>
-                <img src={cartIcon} alt="cart-icon"/>
+                <img src={cartIcon} alt="cart-icon" />
             </button>
-            <div className='cart-counter'>{total}</div>
+
+            <motion.div
+                initial={{scale:1}}
+                animate={{
+                    scale: 1.2,
+                    transition: {
+                        duration: 0.3,
+                        ease: 'easeInOut'
+                    }
+                }}
+
+                key={total}
+                className='cart-counter'>{total}</motion.div>
         </div>
-     );
+    );
 }
 
 export function UserBtn() {
-    return ( 
+    return (
         <button className='user-btn'>
-            <img src={user} alt="user-icon"/>
+            <img src={user} alt="user-icon" />
         </button>
-     );
+    );
 }
 
 
-export function AddToCartBtn({thumbnail, price, name, size}) {
+export function AddToCartBtn({ thumbnail, price, name, size }) {
 
     const dispatch = useDispatch()
     const cart = useSelector(state => state.cart)
@@ -80,12 +94,12 @@ export function AddToCartBtn({thumbnail, price, name, size}) {
         sessionStoreCart([...cart, item])
     }
 
-    return ( 
-        <button className="add-to-cart"  onClick={addItem}>
-            Add to cart 
-            <img src={cartIcon} alt="cart-icon"/>
+    return (
+        <button className="add-to-cart" onClick={addItem}>
+            Add to cart
+            <img src={cartIcon} alt="cart-icon" />
         </button>
-     );
+    );
 }
 
 

@@ -3,7 +3,7 @@
     right:0;
     top:5rem;
     width: 50vw;
-    max-height: 50vh;
+    max-height: 60vh;
     border-radius: 0 0 0 2rem;
     background-color: $background;
     box-sizing: border-box;
@@ -26,12 +26,17 @@
     padding: 0.5rem;
 
     button{
-        padding: 1rem;
-        background-color: $cart-counter;
+        padding: .5rem;
+        font-size: $small;
+        background-color: $primary;
         border: none;
-        color:white;
+        color:grey;
         border-radius: 0.5rem;
         cursor: pointer;
+        &:hover{
+            background-color: grey;
+            color:$primary;
+        }
     }
 }
 .content{
@@ -42,6 +47,23 @@
 
 .hidden{
     display: none;
+}
+
+.go-to-cart{
+    background-color: $cart-counter;
+    color:white;
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.5rem;
+    font-size:  $medium;
+    cursor: pointer;
+    margin: 2rem 0 0 0;
+    width: 100%;
+}
+
+.go-to-cart:disabled{
+    background-color: $primary;
+    color:grey;
 }
 
 @media (max-width: 750px) {

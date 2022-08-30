@@ -71,7 +71,7 @@
     }
 
     &:active{
-       background-color: $primary;
+       @include button-hover-mixin;
     }
 }
 
@@ -102,6 +102,6 @@
 
 @media (min-width: 724px) {
     .add-to-cart:hover{
-        @include primary-hover-mixin;
+        @include button-hover-mixin;
     }
 }

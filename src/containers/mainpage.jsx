@@ -18,7 +18,7 @@ const data = [
     <ItemCard thumbnail={shoe_4} price={49.99} name={"Converse Chuck Taylor"} sizes={[40, 41, 42, 43]} />,
     <ItemCard thumbnail={shoe_5} price={45.99} name={"Vans Old Skool"} sizes={[40, 41, 42, 43]} />,
     <ItemCard thumbnail={shoe_6} price={39.99} name={"Chuck Taylor Classic"} sizes={[40, 41, 42, 43]} />,
-    <ItemCard thumbnail={shoe_7} price={39.99} name={"Black Hight heels"} sizes={[36, 37, 38, 40]} />,
+    <ItemCard thumbnail={shoe_7} price={39.99} name={"Black High heels"} sizes={[36, 37, 38, 40]} />,
     <ItemCard thumbnail={shoe_8} price={45.99} name={"Oxfords without holes"} sizes={[40, 41, 42, 43]} />,
     <ItemCard thumbnail={shoe_9} price={36.99} name={"Oxfords with holes"} sizes={[40, 41, 42, 43]} />,
 ]
