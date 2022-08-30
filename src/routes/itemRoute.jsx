@@ -26,16 +26,22 @@ export function ItemRoute() {
 
                 <div className="item-description">
                     <div className="description">
-                        <h1>{selectedItem.name}</h1>
+                        <h1 style={{marginBottom:'2rem'}}>{selectedItem.name}</h1>
+
+
                         <p>Choose size:</p>
-                        <select name="select-size" onChange={handleChange}>
-                            {
-                               selectedItem.sizes.map((size, index) => (
-                                    <option value={size} key={index}>{size}</option>
-                                ))
-                            }
-                        </select>
+    
+                        <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
                         
+                            <select name="select-size" onChange={handleChange}>
+                                {
+                                selectedItem.sizes.map((size, index) => (
+                                        <option value={size} key={index}>{size}</option>
+                                    ))
+                                }
+                            </select>
+                            <h1>{selectedItem.price}€</h1>
+                        </div>
                     </div>
                     <div className="add-cart-btn">
                         <AddToCartBtn thumbnail={selectedItem.thumbnail} price={selectedItem.price} name={selectedItem.name} size={selectedSize}/>

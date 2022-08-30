@@ -1,38 +1,29 @@
 .item-route{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 .item-container{
-    padding: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:6rem;
-    width:70%;
-    box-sizing: border-box;
+    gap:3rem;
+    width: max(60vw, 48rem);
+    margin: 10rem auto;
 }
 
 .item-thumbnail{
     background-color: $primary;
     border-radius: 2rem;
-    cursor: pointer;
-    overflow: hidden;
-    transition: 150ms ease-in-out;
-    padding: 5rem;
+    width: max(30vw, 24rem);
+    height: max(30vw, 24rem);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
     img{
-        width: 100%;
-        transition: 150ms ease-in-out;
+        width: max(30vw, 22rem);
     }
 
-    &:hover{
-        background-color: $primary-hover;
-        img{
-            transform: scale(1.5);
-        }
-    }
 }
 
 
@@ -44,22 +35,19 @@
 }
 
 .description{
-    padding-bottom: 2rem ;
-    border-bottom: 1px solid black;
-    margin-bottom: 2rem;
-
-    h1{
-        padding-bottom: 2rem;
-    }
+    margin:1rem 0; 
 
     select{
         font-size: $medium;
         padding: 0.5em;
-        margin: 0.5rem 0;
-        cursor: pointer;
+        margin:1rem 0; 
     }
 }
 
-.add-cart-btn{
-    width: max(50%, 12rem);
+
+@media (max-width:800px) {
+    .item-container{
+        grid-template-columns: 1fr;
+        width: 24rem;
+    }
 }
