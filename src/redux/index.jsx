@@ -2,7 +2,6 @@ import { combineReducers } from "redux"
 import {createStore} from 'redux'
 
 
-
 const cartReducer = (state = [], action) => {
     switch (action.type){
         case 'STORE':
@@ -16,7 +15,6 @@ const cartReducer = (state = [], action) => {
                 }
                 return item;
             })
-
 
            return isInCart ?  newState3 : [...state, action.payload]
 
@@ -57,9 +55,17 @@ const contentReducer = (state = false, action) => {
     }
 }
 
+const selectedItemReducer = (state = {}, action) => {
+    if (action.type == 'SELECT') {
+        return action.payload
+    }
+    return state
+}
+
 const allReducers = combineReducers({
     cart: cartReducer,
-    content: contentReducer
+    content: contentReducer,
+    item: selectedItemReducer
 })
 
 export const store = createStore(allReducers)

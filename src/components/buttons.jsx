@@ -6,6 +6,7 @@ import user from '../assets/icons/user.svg'
 import { useSelector } from 'react-redux';
 import {useDispatch} from 'react-redux';
 import { openCart } from '../actions/contentActions';
+import { storeCart } from '../actions/cartActions';
 import { useEffect, useState } from 'react';
 
 export function MenuBtn() {
@@ -57,5 +58,31 @@ export function UserBtn() {
      );
 }
 
+
+export function AddToCartBtn({thumbnail, price, name, size}) {
+
+    const dispatch = useDispatch()
+
+    const addItem = () => {
+
+        const item = {
+            thumbnail: thumbnail,
+            price: price,
+            name: name,
+            amount: 1,
+            size: size,
+            id: Date.now()
+        }
+
+        dispatch(storeCart(item))
+    }
+
+    return ( 
+        <button className="add-to-cart"  onClick={addItem}>
+            Add to cart 
+            <img src={cart} alt="cart-icon"/>
+        </button>
+     );
+}
 
 

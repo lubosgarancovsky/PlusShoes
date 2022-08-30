@@ -52,6 +52,29 @@
     margin-left: 1em;
 }
 
+.add-to-cart{
+    width: 100%;
+    border: none;
+    background-color: $cart-counter;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $medium;
+    padding: 1rem;
+    border-radius: 10em;
+    cursor: pointer;
+    img{
+        width: 1em;
+        margin-left: 1em;
+        filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(1%) hue-rotate(257deg) brightness(108%) contrast(100%);
+    }
+
+    &:active{
+       background-color: $primary;
+    }
+}
+
 .user-btn{
     background-color: transparent;
     border: none;
@@ -75,4 +98,10 @@
         display: none;
     }
 
+}
+
+@media (min-width: 724px) {
+    .add-to-cart:hover{
+        @include primary-hover-mixin;
+    }
 }

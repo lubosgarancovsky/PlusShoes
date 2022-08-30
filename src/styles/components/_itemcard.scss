@@ -73,12 +73,3 @@
     }
 }
 
-@media (min-width: 724px) {
-    .item-button{
-        button{
-            &:hover{
-                @include primary-hover-mixin;
-            }
-        }
-    }
-}

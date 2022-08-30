@@ -4,6 +4,11 @@ import { useState} from 'react'
 
 import { useDispatch } from 'react-redux'
 import { storeCart } from '../actions/cartActions'
+import { openItem } from '../actions/selectedItemActions'
+
+import { AddToCartBtn } from './buttons'
+
+import { Link } from 'react-router-dom'
 
 export function ItemCard({thumbnail, price, name, sizes}) {
 
@@ -15,25 +20,29 @@ export function ItemCard({thumbnail, price, name, sizes}) {
         setSelectedSize(event.target.value)
     }
 
-    const addItem = () => {
 
-        const item = {
+
+    const getItem = () => {
+        const selectedItem = {
             thumbnail: thumbnail,
             price: price,
             name: name,
-            amount: 1,
-            size: selectedSize,
-            id: Date.now()
+            sizes: sizes,
         }
 
-        dispatch(storeCart(item))
+        sessionStorage.setItem('selected-item', JSON.stringify(selectedItem))
+        //console.table(JSON.parse(sessionStorage.getItem('selected-item')))
+        dispatch(openItem(selectedItem))
     }
+
 
     return ( 
         <div className="item-card">
-            <div className="item-picture">
-                <img src={thumbnail} alt="shoe_thumbnail"/>
-            </div>
+            <Link to='Item' onClick={getItem}>
+                <div className="item-picture">
+                    <img src={thumbnail} alt="shoe_thumbnail"/>
+                </div>
+            </Link>
 
             <div className="item-desc">
                 <div className="price-name">
@@ -54,7 +63,7 @@ export function ItemCard({thumbnail, price, name, sizes}) {
             </div>
 
             <div className="item-button">
-                    <button className="add-to-cart" onClick={addItem}>Add to cart <img src={cart} alt="cart-icon"/></button>
+                    <AddToCartBtn thumbnail={thumbnail} price={price} name={name} size={selectedSize}/>
             </div>
 
         </div>
