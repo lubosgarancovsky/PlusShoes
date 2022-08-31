@@ -13,14 +13,14 @@ h1{
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: $small;
 }
 
 
 h3{
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: $medium;
 
     span{
         color: $cart-counter;

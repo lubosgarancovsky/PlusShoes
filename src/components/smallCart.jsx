@@ -5,6 +5,8 @@ import { CartItem } from './cartItem';
 
 import {Link} from 'react-router-dom'
 
+import { motion } from 'framer-motion';
+
 export function SmallCart() {
 
     const [totalPrice, setTotalPrice] = useState(0)
@@ -34,7 +36,13 @@ export function SmallCart() {
     },[cart])
 
     return ( 
-        <div className={isOpen ? "small-cart" : "hidden"}>
+            <motion.div className={isOpen ? "small-cart" : ' small-cart hidden'}
+            initial={{y:'-100%'}}
+            animate={{y:'0'}}
+            transition={{duration:0.5, type:'spring'}}
+            key={isOpen}
+        
+        >
             <div className="top">
                 <div className="cart-info">
                     <h4>Total:</h4>
@@ -55,6 +63,6 @@ export function SmallCart() {
                 </Link>
                 
             </div>
-        </div>
+        </motion.div>
      );
 }

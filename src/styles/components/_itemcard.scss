@@ -1,15 +1,13 @@
 .item-card{
     overflow: hidden;
     display: grid;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
 
     h3{
         font-weight: 300;
-        margin: 0.2em 0;
     }
     h4{
-        font-size: $medium;
-        margin-bottom: 1em;
+        font-size: $small;
     }
 }
 
@@ -17,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     background-color: $primary;
 
     img{
@@ -29,47 +27,18 @@
 
 .item-desc{
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .sizes{
-    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
     align-items: center;
+    height: fit-content;
+
     select{
         font-size: $small;
-        padding: 0.5em;
+        padding: 0.2em;
     }
 }
-
-
-
-.item-button{
-    button{
-        width: 100%;
-        border: none;
-        background-color: $cart-counter;
-        color:white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: $medium;
-        padding: 1rem;
-        border-radius: 10em;
-        cursor: pointer;
-        img{
-            width: 1em;
-            margin-left: 1em;
-            filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(1%) hue-rotate(257deg) brightness(108%) contrast(100%);
-        }
-
-        &:active{
-           background-color: $primary;
-        }
-    }
-}
-

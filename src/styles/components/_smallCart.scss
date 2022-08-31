@@ -1,13 +1,13 @@
 .small-cart{
     position: fixed;
     right:0;
-    top:5rem;
+    top:0;
+    padding:6rem 1rem 1rem 1rem;
     width: 50vw;
-    max-height: 60vh;
+    max-height: 80vh;
     border-radius: 0 0 0 2rem;
     background-color: $background;
     box-sizing: border-box;
-    padding: 1rem;
     overflow-y: auto;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 2px;
     z-index: 2;
@@ -46,7 +46,7 @@
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 .go-to-cart{

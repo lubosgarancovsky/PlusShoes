@@ -5,12 +5,12 @@
     grid-template-columns: 0.5fr 1fr;
     gap: 0.5em;
     align-items: center;
-    padding: 1em 1.5em;
-    border-radius: 2em;
+    padding: 0.8em 2em;
+    border-radius: 5em;
     font-size: $small;
     transition: 100ms;
     img{
-        width: 1.2em;
+        width: 1em;
         filter: $filter;
     }
 
@@ -33,7 +33,7 @@
     cursor: pointer;
 
     img{
-        width: 2rem;
+        width: 2em;
     }
 }
 
@@ -60,8 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: $medium;
     padding: 1rem;
+    font-size: $small;
     border-radius: 10em;
     cursor: pointer;
     img{
@@ -83,7 +83,7 @@
     margin-right: 4em;
 
     img{
-        width: 2rem;
+        width: 2em;
     }
 }
 
@@ -92,6 +92,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 1em;
+        img{
+            width: 1.5em;
+        }
     }
 
     .menu-btn span{
