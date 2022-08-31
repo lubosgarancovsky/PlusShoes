@@ -49,6 +49,16 @@
     display: none !important;
 }
 
+.disabled-link{
+    pointer-events: none;
+}
+
+.disabled-button{
+    background-color: $primary !important;
+    color:grey !important;
+    cursor: pointer !important;
+}
+
 .go-to-cart{
     background-color: $cart-counter;
     color:white;
@@ -61,10 +71,7 @@
     width: 100%;
 }
 
-.go-to-cart:disabled{
-    background-color: $primary;
-    color:grey;
-}
+
 
 @media (max-width: 750px) {
     .small-cart{

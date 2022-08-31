@@ -69,10 +69,18 @@ const selectedItemReducer = (state = {}, action) => {
     return state
 }
 
+const menuReducer = (state = false, action) => {
+    if (action.type == 'TOGGLE') {
+        return !state
+    }
+    return state
+}
+
 const allReducers = combineReducers({
     cart: cartReducer,
     content: contentReducer,
-    item: selectedItemReducer
+    item: selectedItemReducer,
+    menu: menuReducer
 })
 
 export const store = createStore(allReducers)

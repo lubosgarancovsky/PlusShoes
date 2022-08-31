@@ -11,10 +11,18 @@ import { useEffect, useState } from 'react';
 import { sessionStoreCart } from '../scripts/storeCart';
 
 import { motion } from 'framer-motion';
+import { toggleMenu } from '../actions/menuActions';
 
 export function MenuBtn() {
+
+    const dispatch = useDispatch()
+
+    const handleMenu = () => {
+        dispatch(toggleMenu())
+    }
+
     return (
-        <button className="menu-btn">
+        <button className="menu-btn" onClick={handleMenu}>
             <img src={menu} alt="menu-icon" />
             <span>Menu</span>
         </button>

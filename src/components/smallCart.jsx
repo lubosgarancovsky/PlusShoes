@@ -27,12 +27,6 @@ export function SmallCart() {
         });
 
         setTotalPrice(total)
-
-        if (cart.length > 0) {
-            document.querySelector('.go-to-cart').disabled = false;
-        } else {
-            document.querySelector('.go-to-cart').disabled = true;
-        }
     },[cart])
 
     return ( 
@@ -58,8 +52,8 @@ export function SmallCart() {
                     ))
                 }
 
-                <Link to='/PlusShoes/Cart'>
-                    <button className="go-to-cart">Go to cart</button>
+                <Link to='/PlusShoes/Cart' className={cart.length == 0 ? 'disabled-link' : null}>
+                    <button className={cart.length == 0 ? 'go-to-cart disabled-button' : 'go-to-cart'}>Go to cart</button>
                 </Link>
                 
             </div>
