@@ -1,0 +1,55 @@
+input, option, select, textarea{
+    padding: 0.5rem;
+    font-size: $small;
+
+    margin-bottom: 0.5rem;
+}
+
+form button{
+    margin: 0.5rem 0;
+}
+
+.checkbox{
+    margin-bottom: 3rem;
+}
+
+label{
+    padding: 0.2rem 0;
+}
+
+textarea{
+    resize: none;
+}
+
+.group-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+
+.group-1, .group-2, .group-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#terms{
+    width: fit-content;
+    margin-right: 1rem;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width: 470px) {
+    .group-wrapper{
+        grid-template-columns: 1fr;
+        gap:4rem;
+    }
+    input, option, select, textarea{
+        font-size: $medium;
+    }
+}

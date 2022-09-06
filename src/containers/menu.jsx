@@ -16,6 +16,7 @@ export function Menu() {
             exit={{x:'-100%'}}
             key={isOpen}
         >
+            <h1 style={{padding: '10rem 0 0 0'}}>Work in progress</h1>
             
         </motion.div>
         }

@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -15,6 +16,32 @@ html, body{
 
 body{
   background-color: $background;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+td{
+  padding: 0.5rem;
+}
+
+tr:nth-child(odd){
+  background-color: rgb(203, 203, 203);
+}
+
+table{
+  margin: 1rem auto;
+  font-size: $small;
+  background-color: rgb(230, 230, 230);
 }
 
 @media (max-width: 940px) {

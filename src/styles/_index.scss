@@ -7,6 +7,8 @@
 @import './components/itemcard';
 @import './components/smallCart';
 @import './components/cartitem';
+@import './components/form';
+
 
 
 
@@ -18,3 +20,4 @@
 
 // ROUTES
 @import './routes/itemRoute.scss';
+@import './routes/bigCart.scss';

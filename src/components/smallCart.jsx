@@ -53,7 +53,7 @@ export function SmallCart() {
                 }
 
                 <Link to='/PlusShoes/Cart' className={cart.length == 0 ? 'disabled-link' : null}>
-                    <button className={cart.length == 0 ? 'go-to-cart disabled-button' : 'go-to-cart'}>Go to cart</button>
+                    <button className={cart.length == 0 ? 'go-to-cart disabled-button' : 'go-to-cart'} onClick={()=>{dispatch(openCart())}}>Go to cart</button>
                 </Link>
                 
             </div>

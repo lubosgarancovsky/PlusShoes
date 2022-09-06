@@ -12,6 +12,12 @@ export const storeWholeCart = (cart) => {
     }
 }
 
+export const resetCart = () => {
+    return {
+        type: 'RESET',
+    }
+}
+
 export const removeFromCart = (id) => {
     return {
         type: 'DELETE',
@@ -33,6 +39,5 @@ export const decrement = (id) => {
         payload: id
     }
 }
-
 
 

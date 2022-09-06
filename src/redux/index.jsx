@@ -47,7 +47,9 @@ const cartReducer = (state = [], action) => {
 
         case 'STORECART':
             return action.payload
-
+        case 'RESET':
+            sessionStoreCart([])
+            return []
         default:
             return state
     }
@@ -76,11 +78,35 @@ const menuReducer = (state = false, action) => {
     return state
 }
 
+const pageReducer = (state = 0, action) => {
+    switch(action.type) {
+        case 'SUMMARY':
+            return 0
+        case 'FORM':
+            return 1
+        case 'DETAILS':
+            return 2
+        case 'CONFIRM':
+            return 3
+        default:
+            return state
+    }
+}
+
+const formReducer = (state = {}, action) => {
+    if(action.type === 'SEND') {
+        return action.payload
+    }
+    return state
+}
+
 const allReducers = combineReducers({
     cart: cartReducer,
     content: contentReducer,
     item: selectedItemReducer,
-    menu: menuReducer
+    menu: menuReducer,
+    page: pageReducer,
+    form: formReducer
 })
 
 export const store = createStore(allReducers)
