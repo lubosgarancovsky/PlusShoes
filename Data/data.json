@@ -1,0 +1,157 @@
+[
+    {
+        "name": "Nike Air Max Alpha",
+        "price": 74.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Nike Dunk Low Retro",
+        "price": 89.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Converse Chuck Taylor",
+        "price": 65.99,
+        "sizes": [40, 41, 42, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Nike Zoom",
+        "price": 65.99,
+        "sizes": [38, 39, 40, 41, 42],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans Old Skool",
+        "price": 45.99,
+        "sizes": [37, 38, 39, 40, 41, 42, 43],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Chuck Taylor Classic",
+        "price": 39.99,
+        "sizes": [37, 38, 39, 40, 41, 42, 43],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Black High heels",
+        "price": 39.99,
+        "sizes": [35, 36, 37, 38, 39],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Lasocki low shoes",
+        "price": 63.95,
+        "sizes": [38, 39, 40, 42, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Ottimo low shoes - black",
+        "price": 55.95,
+        "sizes": [39, 40, 41, 42, 43],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Rieker B3360-14",
+        "price": 84.99,
+        "sizes": [39, 40, 41, 42, 43],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Bugatti 311",
+        "price": 79.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Ottimo M16SS025",
+        "price": 34.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Badura MI08-RUBEN",
+        "price": 94.99,
+        "sizes": [40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Addidas GRAND COURT",
+        "price": 62.99,
+        "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "M",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans FILMORE DECON",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans DOHENY PLATFORM",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans ASHER",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "Sneakers"
+    },{
+        "name": "Lasocki WYL2930 Black",
+        "price": 64.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Lasocki WYL2930 Green",
+        "price": 64.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Naomi SIENA-01",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "DeeZee KL-091201 Black",
+        "price": 34.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Jenny Fairt WYL3095-1 Black",
+        "price": 34.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://w7.pngwing.com/pngs/722/1001/png-transparent-shoe-converse-sneakers-canvas-shoes-cdr-white-painted-thumbnail.png",
+        "gender" : "F",
+        "category" : "High Heels"
+    }
+]
