@@ -100,13 +100,21 @@ const formReducer = (state = {}, action) => {
     return state
 }
 
+const filterReducer = (state = {gender: 'M', category: 'Sneakers'}, action) => {
+    if (action.type === 'FILTER') {
+        return action.payload
+    }
+    return state
+}
+
 const allReducers = combineReducers({
     cart: cartReducer,
     content: contentReducer,
     item: selectedItemReducer,
     menu: menuReducer,
     page: pageReducer,
-    form: formReducer
+    form: formReducer,
+    filter: filterReducer
 })
 
 export const store = createStore(allReducers)

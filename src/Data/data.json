@@ -1,0 +1,157 @@
+[
+    {
+        "name": "Nike Air Max Alpha",
+        "price": 74.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/nike_air.webp",
+        "gender" : "M",
+        "category" : "Sneakers"
+    },{
+        "name": "Nike Dunk Low Retro",
+        "price": 89.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/dunk_low.webp",
+        "gender" : "M",
+        "category" : "Sneakers"
+    },{
+        "name": "Converse Chuck Taylor",
+        "price": 65.99,
+        "sizes": [40, 41, 42, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/converse_chuck_tailor.webp",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Nike Zoom",
+        "price": 65.99,
+        "sizes": [38, 39, 40, 41, 42],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/nike_zoom.webp",
+        "gender" : "M",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans Old Skool",
+        "price": 45.99,
+        "sizes": [37, 38, 39, 40, 41, 42, 43],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/vans_old_skool.webp",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Chuck Taylor Classic",
+        "price": 39.99,
+        "sizes": [37, 38, 39, 40, 41, 42, 43],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/chuck_tailor_classic.webp",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Black High heels",
+        "price": 39.99,
+        "sizes": [35, 36, 37, 38, 39],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/high_heels.webp",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Lasocki low shoes",
+        "price": 63.95,
+        "sizes": [38, 39, 40, 42, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/lasocki_low_shoes.webp",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Ottimo low shoes - black",
+        "price": 55.95,
+        "sizes": [39, 40, 41, 42, 43],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/ottimo_low_shoes.webp",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Rieker B3360-14",
+        "price": 84.99,
+        "sizes": [39, 40, 41, 42, 43],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/rieker_b3360.webp",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Bugatti 311",
+        "price": 79.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/bugatti_311.webp",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Ottimo M16SS025",
+        "price": 34.99,
+        "sizes": [39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/ottimo_m16.webp",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Badura MI08-RUBEN",
+        "price": 94.99,
+        "sizes": [40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/badura_mi08.webp",
+        "gender" : "M",
+        "category" : "Low Shoes"
+    },{
+        "name": "Addidas GRAND COURT",
+        "price": 62.99,
+        "sizes": [38, 39, 40, 41, 42, 43, 44, 45],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/adidas_grand_court.webp",
+        "gender" : "U",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans FILMORE DECON",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/vans_filmore_decon.webp",
+        "gender" : "F",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans DOHENY PLATFORM",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/vans_doheny_platform.webp",
+        "gender" : "F",
+        "category" : "Sneakers"
+    },{
+        "name": "Vans ASHER",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/vans_asher.webp",
+        "gender" : "F",
+        "category" : "Sneakers"
+    },{
+        "name": "Lasocki WYL2930 Black",
+        "price": 64.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/lasocki_WYL2930.webp",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Lasocki WYL2930 Green",
+        "price": 64.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/lasocki_WYL2930-green.webp",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Naomi SIENA-01",
+        "price": 59.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/Naomi_SIENA-01.webp",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "DeeZee KL-091201 Black",
+        "price": 34.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/DeeZee-KL-091201-Black.webp",
+        "gender" : "F",
+        "category" : "High Heels"
+    },{
+        "name": "Jenny Fairt WYL3095-1 Black",
+        "price": 34.99,
+        "sizes": [36, 37, 38, 39, 40],
+        "thumbnail": "https://lubosgarancovsky.github.io/PlusShoes/Data/images/Jenny-Fairt-WYL3095-1.webp",
+        "gender" : "F",
+        "category" : "High Heels"
+    }
+]

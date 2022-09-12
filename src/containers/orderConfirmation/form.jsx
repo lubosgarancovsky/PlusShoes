@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { summary, details} from '../actions/pageActions'
-import { sendData} from '../actions/formActions'
+import { summary, details} from '../../actions/pageActions'
+import { sendData} from '../../actions/formActions'
 import { useState } from 'react';
 
 export function Form() {

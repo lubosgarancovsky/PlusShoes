@@ -1,11 +1,11 @@
 import {useEffect, useState} from 'react';
 import {useSelector} from 'react-redux'
-import { CartItem } from '../components/cartItem';
-import {CartLoader} from '../components/cartHandler'
+import { CartItem } from '../../components/cartItem';
+import {CartLoader} from '../../components/cartHandler'
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import { form } from '../actions/pageActions'
+import { form } from '../../actions/pageActions'
 
 export function Summary() {
 

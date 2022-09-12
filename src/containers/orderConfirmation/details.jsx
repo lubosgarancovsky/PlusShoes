@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { form, confirmation } from '../actions/pageActions'
-import { resetCart } from "../actions/cartActions";
+import { form, confirmation } from '../../actions/pageActions'
+import { resetCart } from "../../actions/cartActions";
 
 export function Details() {
 

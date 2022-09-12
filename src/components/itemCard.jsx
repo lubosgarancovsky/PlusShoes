@@ -10,7 +10,7 @@ import { AddToCartBtn } from './buttons'
 
 import { Link } from 'react-router-dom'
 
-export function ItemCard({thumbnail, price, name, sizes}) {
+export function ItemCard({thumbnail, price, name, sizes, gender, category}) {
 
     const dispatch = useDispatch()
     const [selectedSize, setSelectedSize] = useState(sizes[0])
@@ -28,6 +28,8 @@ export function ItemCard({thumbnail, price, name, sizes}) {
             price: price,
             name: name,
             sizes: sizes,
+            gender: gender,
+            category: category
         }
 
         sessionStorage.setItem('selected-item', JSON.stringify(selectedItem))

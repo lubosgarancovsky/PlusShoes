@@ -1,5 +1,5 @@
 main{
-    padding: 10rem 0;
+    padding: 6rem 0;
 }
 
 .goods-grid{
@@ -10,6 +10,21 @@ main{
     row-gap: 8rem;
     width: max(48rem, 60vw);
     margin: auto;
+}
+
+.filters{
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    ul li {
+        color: rgb(100, 100, 100);
+    }
 }
 
 @media (max-width:680px) {

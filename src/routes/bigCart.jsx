@@ -1,15 +1,15 @@
 import {TopBar} from '../containers/topbar'
-import {Summary} from '../containers/summary'
-import {Form} from '../containers/form'
+import {Summary} from '../containers/orderConfirmation/summary'
+import {Form} from '../containers/orderConfirmation/form'
 import { SmallCart } from '../components/smallCart'
-import { Details } from '../containers/details';
+import { Details } from '../containers/orderConfirmation/details';
 
 import { useDispatch, useSelector} from 'react-redux';
 import { CartNavigation } from '../components/cartNavigation';
 import { useEffect } from 'react';
 
 import { summary } from '../actions/pageActions';
-import { Confirmation } from '../containers/confirmation';
+import { Confirmation } from '../containers/orderConfirmation/confirmation';
 
 const pages = [<Summary/>, <Form/>, <Details/> , <Confirmation/>]
 

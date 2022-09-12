@@ -1,44 +1,75 @@
 import { ItemCard } from '../components/itemCard'
 
-import shoe_1 from '../assets/pictures/shoe_1.webp'
-import shoe_2 from '../assets/pictures/shoe_2.webp'
-import shoe_3 from '../assets/pictures/shoe_3.webp'
-import shoe_4 from '../assets/pictures/shoe_4.webp'
-import shoe_5 from '../assets/pictures/shoe_5.webp'
-import shoe_6 from '../assets/pictures/shoe_6.webp'
-import shoe_7 from '../assets/pictures/shoe_7.webp'
-import shoe_8 from '../assets/pictures/shoe_8.webp'
-import shoe_9 from '../assets/pictures/shoe_9.webp'
+import {useState, useEffect} from 'react'
+import { useSelector } from 'react-redux'
 
-
-const data = [
-    <ItemCard thumbnail={shoe_1} price={74.99} name={"Nike Air Max Alpha"} sizes={[40, 41, 42, 43]} />,
-    <ItemCard thumbnail={shoe_2} price={89.99} name={"Nike Dunk Low Retro"} sizes={[39, 40, 41, 42]} />,
-    <ItemCard thumbnail={shoe_3} price={65.99} name={"Nike Zoom"} sizes={[40, 41, 42, 43]} />,
-    <ItemCard thumbnail={shoe_4} price={49.99} name={"Converse Chuck Taylor"} sizes={[40, 41, 42, 43]} />,
-    <ItemCard thumbnail={shoe_5} price={45.99} name={"Vans Old Skool"} sizes={[40, 41, 42, 43]} />,
-    <ItemCard thumbnail={shoe_6} price={39.99} name={"Chuck Taylor Classic"} sizes={[40, 41, 42, 43]} />,
-    <ItemCard thumbnail={shoe_7} price={39.99} name={"Black High heels"} sizes={[36, 37, 38, 40]} />,
-    <ItemCard thumbnail={shoe_8} price={45.99} name={"Oxfords without holes"} sizes={[40, 41, 42, 43]} />,
-    <ItemCard thumbnail={shoe_9} price={36.99} name={"Oxfords with holes"} sizes={[40, 41, 42, 43]} />,
-]
 
 export function MainPage() {
 
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(false)
+    const filterObject = useSelector(state => state.filter)
+
+    const fetchData = () => {
+        setLoading(true)
+        fetch('https://lubosgarancovsky.github.io/PlusShoes/Data/data.json')
+        .then((response) =>{
+            if (response.ok){
+                setError(false)
+                return response.json()
+            }
+            throw response
+        })
+        .then((data) =>{
+            setData(data)
+        })
+        .catch((error) => {
+            console.log(error)
+            setError(true)
+        })
+        .finally(()=>{
+            setLoading(false)
+        })
+    }
+
+    useEffect(()=>{
+        fetchData()
+    },[])
+
+    if (loading) {
+        return(
+            <main>
+                <h1>Loading...</h1>
+            </main> 
+        )
+    }
+    
+    if (error) {
+        return(
+            <main>
+                <h1>There has been an error while loading data</h1>
+            </main> 
+        )
+    }
+
     return ( 
         <main>
+            <div className="filters">
+                <ul>
+                    <li>{filterObject.gender + ' >> '}</li>
+                    <li>{filterObject.category}</li>
+                </ul>
+            </div>
             <div className='goods-grid'>
-                
                 {
-                    data.map((item) => (
-                        item
+                    data.filter(item => (item.gender === filterObject.gender || item.gender === 'U') && item.category === filterObject.category).map((item, index) => (
+                        <ItemCard key={index} thumbnail={item.thumbnail} name={item.name} price={item.price} sizes={item.sizes} gender={item.gender} category={item.category}/>
                     ))
                 }
-               
-               
             </div>
         </main>
-     );
+    );
 }
 
 

@@ -2,10 +2,33 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: $background;
     z-index: 49;
     top:0;
     left:0;
+    padding: 6rem 2rem;
+    box-shadow: rgba(100, 100, 100, 0.5) 2px 0px 15px 2px;
+}
+
+.men, .women{
+    padding: 1rem 0;
+
+    h2{
+        cursor: pointer;
+    }
+    ul{
+        list-style-type: none;
+
+        li{
+            cursor: pointer;
+            width: fit-content;
+            padding: 0.2rem 0.5rem;
+
+            &:hover a{
+                color: rgb(100, 100, 100);
+            }
+        }
+    }
 }
 
 @media (min-width: 900px) {
